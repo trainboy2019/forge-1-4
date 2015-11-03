@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.example.examplemod.cm"/>
+<fullyQualifiedTypeName name="com.camp.block.ColoredWood"/>
+<fullyQualifiedTypeName name="net.minecraft.util.IStringSerializable"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.InventoryHelper"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.InventoryLargeChest"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.AnimalChest"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.Container"/>
+<fullyQualifiedTypeName name="net.minecraft.inventory.Slot"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="com.camp.Logger"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.passive.EntityVillager.ItemAndEmeraldToItem"/>
+<fullyQualifiedTypeName name="net.minecraft.init.Items"/>
+<fullyQualifiedTypeName name="net.minecraft.client.resources.model.ModelBakery"/>
+<fullyQualifiedTypeName name="java.sql.Types"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.SideOnly"/>
+<fullyQualifiedTypeName name="net.minecraftforge.fml.relauncher.Side"/>
+<fullyQualifiedTypeName name="net.minecraft.item.Item"/>
+<fullyQualifiedTypeName name="net.minecraft.entity.Entity"/>
+<fullyQualifiedTypeName name="net.minecraft.block.Block"/>
+<fullyQualifiedTypeName name="com.camp.block.BitBlock"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,25 @@
+[11:37:04] [Client thread/INFO]: Setting user: Player348
+[11:37:05] [Client thread/INFO]: LWJGL Version: 2.9.2
+[11:37:08] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
+[11:37:08] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:37:08] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:37:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:37:09] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:37:09] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:37:09] [Thread-8/INFO]: OpenAL initialized.
+[11:37:09] [Sound Library Loader/INFO]: Sound engine started
+[11:37:14] [Client thread/INFO]: Created: 8192x4096 textures-atlas
+[11:37:15] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
+[11:37:15] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:37:15] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:37:15] [Client thread/INFO]: SoundSystem shutting down...
+[11:37:15] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:37:15] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:37:15] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[11:37:15] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:37:15] [Thread-10/INFO]: OpenAL initialized.
+[11:37:16] [Sound Library Loader/INFO]: Sound engine started
+[11:37:20] [Client thread/INFO]: Created: 8192x4096 textures-atlas
+[11:37:22] [Client thread/INFO]: Stopping!
+[11:37:22] [Client thread/INFO]: SoundSystem shutting down...
+[11:37:23] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
