@@ -1,10 +1,10 @@
 {
     "__comment": "This file was created by Eleazzaar for Lithos:Core",
     "textures": {
-        "particle": "blocks/customCake_side",
-        "bottom": "blocks/customCake_bottom",
-        "top": "blocks/customCake_top",
-        "side": "blocks/customCake_side"
+        "particle": "cm:blocks/customCake_side",
+        "bottom": "cm:blocks/customCake_bottom",
+        "top": "cm:blocks/customCake_top",
+        "side": "cm:blocks/customCake_side"
     },
     "elements": [
         {   "from": [ 1, 0, 1 ],

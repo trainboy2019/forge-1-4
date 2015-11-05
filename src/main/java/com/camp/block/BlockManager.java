@@ -77,6 +77,7 @@ public class BlockManager {
     public static BitBlock bowser;
     public static BlockProperties propertyBlock;
     public static BitBlock bitBlock;
+    public static ColoredWood coloredWood;
      
     public static void mainRegistry() {
         initializeBlock();
@@ -123,6 +124,8 @@ public class BlockManager {
         deathBlock = new DeathBlock();
         blockPig = new BlockPig();
         specialBlock = new SpecialBlock();
+        coloredWood = new ColoredWood();
+       // coloredWood = registerBlock(new ColoredWood());
         bitBlock = registerBlock(new BitBlock());
         
        // bluestoneWire= new BluestoneWire();
@@ -175,6 +178,7 @@ public class BlockManager {
     	GameRegistry.registerBlock(toad, toad.name+"17");
     	GameRegistry.registerBlock(bowser, bowser.name+"18");*/
     	GameRegistry.registerBlock(customCake, customCake.name);
+    	GameRegistry.registerBlock(coloredWood, coloredWood.name);
     	GameRegistry.registerBlock(oreBlock, oreBlock.name);
     //	GameRegistry.registerBlock(coloredWood, ColoredWood.name);
     	//GameRegistry.registerBlock(propertyBlock = new BlockProperties("block_properties"), ItemBlockMeta.class, "block_properties");

@@ -113,6 +113,21 @@ public class cm
     	createEntity(CustomMob.class, "CustomMob", 0x00FF00, 0xFF0000);
     	createEntity(CatCow.class, "CatCow", 0x000000, 0xFFFFFF);
     	createEntity(GiantSkeleton.class, "GiantSkeleton", 0xFFF000, 0x000FFF);
+    	/**
+    	 * 
+    	 * 
+    	 * 
+    	 * 
+    	 * BLOCKS WITH METADATA MODEL SETUP!!!!!!
+    	 * 
+    	 * 
+    	 * 
+    	 * 
+    	 */
+    			if (event.getSide().isClient()){
+    				ModelBakery.addVariantName(Item.getItemFromBlock(BlockManager.bitBlock), "cm:BitBlock0", "cm:BitBlock1", "cm:BitBlock2", "cm:BitBlock3", "cm:BitBlock4", "cm:BitBlock5", "cm:BitBlock6", "cm:BitBlock7", "cm:BitBlock8", "cm:BitBlock9", "cm:BitBlock10", "cm:BitBlock11", "cm:BitBlock12", "cm:BitBlock13", "cm:BitBlock14", "cm:BitBlock15");
+    				ModelBakery.addVariantName(Item.getItemFromBlock(BlockManager.coloredWood), "cm:ColoredWood0", "cm:ColoredWood1", "cm:ColoredWood2", "cm:ColoredWood3", "cm:ColoredWood4", "cm:ColoredWood5", "cm:ColoredWood6", "cm:ColoredWood7", "cm:ColoredWood8", "cm:ColoredWood9", "cm:ColoredWood10", "cm:ColoredWood11", "cm:ColoredWood12", "cm:ColoredWood13", "cm:ColoredWood14", "cm:ColoredWood15");
+    			}
     }
     @EventHandler
     public void init(FMLInitializationEvent event)
@@ -129,6 +144,14 @@ public class cm
     	
     	GameRegistry.registerWorldGenerator(new CustomDungeonGen(), 10000);
     	
+    	ItemStack dyeStackRed = new ItemStack(Items.dye);
+    	dyeStackRed.setItemDamage(14);
+    	ItemStack dyeStackBlue = new ItemStack(Items.dye);
+    	dyeStackRed.setItemDamage(12);
+    	ItemStack dyeStackGreen = new ItemStack(Items.dye);
+    	dyeStackRed.setItemDamage(13);
+
+    	
     	// Crafting Recipes
     	 
         //Shaped Recipes
@@ -137,6 +160,9 @@ public class cm
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.americanSword, 1), " y ", " y ", " x ", 'x', Items.stick, 'y', ItemManager.americanIngot);
         GameRegistry.addRecipe(new ItemStack(Items.cooked_chicken), "xxx", "xyx", "xxx", 'x', Items.stick, 'y', Items.chicken);
     	GameRegistry.addRecipe(new ItemStack(BlockManager.splatoonBlock, 1), "xxx", "xyx", "xxx", 'x', Blocks.glass, 'y', Blocks.glowstone);
+    	GameRegistry.addRecipe(new ItemStack(BlockManager.trampolineBlock, 1), "xyx", "yzy", "xyx", 'x', Blocks.hay_block, 'y', Blocks.slime_block, 'z', Items.feather);
+    	GameRegistry.addRecipe(new ItemStack(BlockManager.bitBlock, 1), "xxx", "abc", "xxx", 'x', Blocks.planks, 'a', dyeStackRed, 'b', dyeStackBlue, 'c', dyeStackGreen);
+    	GameRegistry.addRecipe(new ItemStack(ItemManager.lightningOrb), "xyx", "yzy", "xyx", 'z', Items.skull, 'y', Items.gunpowder, 'x', Items.diamond);
  
         //Shapeless Recipes
       //  GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond, 64), Blocks.dirt);
@@ -303,6 +329,7 @@ public class cm
             renderItem.getItemModelMesher().register(ItemManager.trainboyItem, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.trainboyItem.name, "inventory"));
             renderItem.getItemModelMesher().register(ItemManager.enderBackpack, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.enderBackpack.name, "inventory"));
             renderItem.getItemModelMesher().register(ItemManager.cakeItem, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.cakeItem.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.eraser, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.eraser.name, "inventory"));
             renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.splatoonBlock), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.splatoonBlock.name, "inventory"));
             renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.customCake), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.customCake.name, "inventory"));
          //   renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name, "inventory"));
@@ -341,6 +368,23 @@ public class cm
 //            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.bitBlock), 16, new ModelResourceLocation(this.MODID + ":" + BlockManager.bitBlock.name+"16", "inventory"));
   //          renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.bitBlock), 17, new ModelResourceLocation(this.MODID + ":" + BlockManager.bitBlock.name+"17", "inventory"));
     //        renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.bitBlock), 18, new ModelResourceLocation(this.MODID + ":" + BlockManager.bitBlock.name+"18", "inventory"));
+            
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"0", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 1, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"1", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 2, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"2", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 3, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"3", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 4, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"4", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 5, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"5", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 6, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"6", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 7, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"7", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 8, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"8", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 9, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"9", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 10, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"10", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 11, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"11", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 12, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"12", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 13, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"13", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 14, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"14", "inventory"));
+            renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 15, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name+"15", "inventory"));
             
             DimensionManager.registerProviderType(2,CustomWorldProvider.class, false);
             DimensionManager.registerDimension(2,2);

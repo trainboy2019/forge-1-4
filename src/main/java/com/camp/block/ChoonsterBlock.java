@@ -17,6 +17,7 @@ public class ChoonsterBlock extends Block{
 
 	protected ChoonsterBlock() {
 		super(Material.iron);
+		this.setUnlocalizedName(name);
 		//this.
 		// TODO Auto-generated constructor stub
 	}
@@ -26,7 +27,7 @@ public class ChoonsterBlock extends Block{
     {
         if (rand.nextInt(100) == 0)
         {
-            worldIn.playSound((double)pos.getX() + 1.5D, (double)pos.getY() + 1.5D, (double)pos.getZ() + 1.5D, "portal.portal", 0.5F, rand.nextFloat() * 0.4F + 0.8F, false);
+            worldIn.playSound((double)pos.getX() + 1.5D, (double)pos.getY() + 1.5D, (double)pos.getZ() + 2.5D, "portal.portal", 2.5F, rand.nextFloat() * 0.4F + 0.8F, false);
         }
 
         for (int i = 0; i < 4; ++i)
@@ -34,9 +35,9 @@ public class ChoonsterBlock extends Block{
             double d0 = (double)((float)pos.getX() + rand.nextFloat());
             double d1 = (double)((float)pos.getY() + rand.nextFloat());
             double d2 = (double)((float)pos.getZ() + rand.nextFloat());
-            double d3 = ((double)rand.nextFloat() - 1.5D) * 1.5D;
-            double d4 = ((double)rand.nextFloat() - 1.5D) * 1.5D;
-            double d5 = ((double)rand.nextFloat() - 1.5D) * 1.5D;
+            double d3 = ((double)rand.nextFloat() + 1.5D) * 1.5D;
+            double d4 = ((double)rand.nextFloat() + 1.5D) * 1.5D;
+            double d5 = ((double)rand.nextFloat() + 1.5D) * 1.5D;
             int j = rand.nextInt(2) * 2 - 1;
 
             if (worldIn.getBlockState(pos.west()).getBlock() != this && worldIn.getBlockState(pos.east()).getBlock() != this)

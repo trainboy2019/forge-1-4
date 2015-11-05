@@ -34,6 +34,7 @@ public class ItemManager {
     public static DebugArmor debugBoots;
     public static CakeItem cakeItem;
     public static GravityItem gravityItem;
+    public static Eraser eraser;
      
     public static void mainRegistry() {
         initializeItem();
@@ -41,6 +42,7 @@ public class ItemManager {
     }
  
     public static void initializeItem() {
+    	eraser = new Eraser();
     	gravityItem=new GravityItem();
     	cakeItem = new CakeItem();
     	enderBackpack = new EnderBackpack();
@@ -68,6 +70,7 @@ public class ItemManager {
     
  
     public static void registerItem() {
+    	GameRegistry.registerItem(eraser, eraser.name);
     //	GameRegistry.registerItem(gravityItem, gravityItem.name);
     	GameRegistry.registerItem(cakeItem, cakeItem.name);
     	GameRegistry.registerItem(enderBackpack, enderBackpack.name);

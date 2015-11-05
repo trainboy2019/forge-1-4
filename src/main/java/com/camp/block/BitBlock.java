@@ -2,6 +2,8 @@ package com.camp.block;
 
 import java.util.List;
 
+import com.example.examplemod.cm;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.material.Material;
@@ -35,7 +37,7 @@ public class BitBlock extends Block implements IMetaBlockName {
 	        this.setUnlocalizedName(name);
 	        //this.setDefaultState(this.blockState.getBaseState().withProperty(VARIANT, BitBlock.EnumType.OldMario));
 	        this.setDefaultState(getBlockState().getBaseState().withProperty(VARIANT, BitBlock.EnumType.OldMario));
-	        this.setCreativeTab(CreativeTabs.tabBlock);
+	        this.setCreativeTab(cm.tabIke);
 	    }
 
 	    
