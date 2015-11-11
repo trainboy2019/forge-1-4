@@ -41,7 +41,7 @@ public class SlipperyBlock extends Block
             
         }
         if (!isOn){
-        	this.slipperiness=0;
+        	this.slipperiness = 0.6F;
         }
     }
 

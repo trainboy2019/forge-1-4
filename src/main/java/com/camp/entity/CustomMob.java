@@ -209,7 +209,7 @@ public class CustomMob extends EntitySpider {
 	            this.dropItem(ItemManager.lightningOrb, 1);
 	        }
 	        else {
-	            Item drop = (ItemManager.customShovel);
+	            Item drop = (ItemManager.americanSword);
 	            this.dropItem(drop, 1);
 	        }
 	    }

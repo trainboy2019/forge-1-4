@@ -107,7 +107,7 @@ public class cm
     	ItemManager.mainRegistry();
     	BlockManager.mainRegistry();
     	ModBiomes.registerBiomes();
-    	
+    	BlockManager.registerTileEntities();
     	ModMapGen.registerMapGen();
     	
     	createEntity(CustomMob.class, "CustomMob", 0x00FF00, 0xFF0000);
@@ -330,6 +330,12 @@ public class cm
             renderItem.getItemModelMesher().register(ItemManager.enderBackpack, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.enderBackpack.name, "inventory"));
             renderItem.getItemModelMesher().register(ItemManager.cakeItem, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.cakeItem.name, "inventory"));
             renderItem.getItemModelMesher().register(ItemManager.eraser, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.eraser.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.diamondMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.diamondMultiTool.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.goldMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.goldMultiTool.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.ironMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.ironMultiTool.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.stoneMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.stoneMultiTool.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.woodenMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.woodenMultiTool.name, "inventory"));
+            renderItem.getItemModelMesher().register(ItemManager.customMultiTool, 0, new ModelResourceLocation(this.MODID + ":" + ItemManager.customMultiTool.name, "inventory"));
             renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.splatoonBlock), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.splatoonBlock.name, "inventory"));
             renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.customCake), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.customCake.name, "inventory"));
          //   renderItem.getItemModelMesher().register(Item.getItemFromBlock(BlockManager.coloredWood), 0, new ModelResourceLocation(this.MODID + ":" + BlockManager.coloredWood.name, "inventory"));

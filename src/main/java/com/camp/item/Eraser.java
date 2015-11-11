@@ -2,6 +2,7 @@ package com.camp.item;
 
 import com.example.examplemod.cm;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
@@ -32,8 +33,7 @@ public class Eraser extends Item{
 	
 
 
-	@Override
-	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn,
+	public boolean onItemRightClick(ItemStack stack, EntityPlayer playerIn,
 			World worldIn, BlockPos pos, EnumFacing side, float hitX,
 			float hitY, float hitZ) {
 		// TODO Auto-generated method stub
@@ -51,6 +51,28 @@ public class Eraser extends Item{
            // playerIn.triggerAchievement(StatList.objectUseStats[Item.getIdFromItem(this)]);
            /// return this.fillBucket(itemStackIn, playerIn, Items.water_bucket);
         }
+	    
+	    return true;
+	}
+	
+	@Override
+	public boolean onItemUse(ItemStack stack, EntityPlayer playerIn,
+			World worldIn, BlockPos pos, EnumFacing side, float hitX,
+			float hitY, float hitZ) {
+		// TODO Auto-generated method stub
+		boolean flag = this.name == this.name1;
+		MovingObjectPosition movingobjectposition = this.getMovingObjectPositionFromPlayer(worldIn, playerIn, flag);
+		BlockPos blockpos = movingobjectposition.getBlockPos();
+		IBlockState iblockstate = worldIn.getBlockState(blockpos);
+        Material material = iblockstate.getBlock().getMaterial();
+	//	Entity bolt = new EntityLightningBolt(worldIn, pos.getX(), pos.getY(), pos.getZ());
+	    playerIn.worldObj.setBlockToAir(pos);
+	    IBlockState targetID = worldIn.getBlockState(pos);
+	    if(targetID == Blocks.water || targetID == Blocks.water){
+	    	worldIn.setBlockToAir(blockpos);
+	    return true;
+	    }
+
 	    
 	    return true;
 	}

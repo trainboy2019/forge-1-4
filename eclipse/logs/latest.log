@@ -1,121 +1,34 @@
-[16:36:21] [Client thread/INFO]: Setting user: Player605
-[16:36:23] [Client thread/INFO]: LWJGL Version: 2.9.2
-[16:36:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
-[16:36:25] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:25] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:25] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:36:26] [Thread-8/INFO]: Initializing LWJGL OpenAL
-[16:36:26] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:36:26] [Thread-8/INFO]: OpenAL initialized.
-[16:36:26] [Sound Library Loader/INFO]: Sound engine started
-[16:36:31] [Client thread/INFO]: Created: 8192x4096 textures-atlas
-[16:36:31] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
-[16:36:31] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:31] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:31] [Client thread/INFO]: SoundSystem shutting down...
-[16:36:32] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[16:36:32] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:36:32] [Thread-10/INFO]: Initializing LWJGL OpenAL
-[16:36:32] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:36:32] [Thread-10/INFO]: OpenAL initialized.
-[16:36:32] [Sound Library Loader/INFO]: Sound engine started
-[16:36:37] [Client thread/INFO]: Created: 8192x4096 textures-atlas
-[16:36:40] [Server thread/INFO]: Starting integrated minecraft server version 1.8
-[16:36:40] [Server thread/INFO]: Generating keypair
-[16:36:40] [Server thread/INFO]: Preparing start region for level 0
-[16:36:41] [Server thread/INFO]: Changing view distance to 12, from 10
-[16:36:42] [Client thread/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@550a78ed[id=98baa43b-a62e-3d66-8ee8-0933f53e227d,name=Player605,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillProfileProperties(YggdrasilMinecraftSessionService.java:151) [YggdrasilMinecraftSessionService.class:?]
-	at net.minecraft.client.Minecraft.launchIntegratedServer(Minecraft.java:2324) [Minecraft.class:?]
-	at net.minecraftforge.fml.client.FMLClientHandler.tryLoadExistingWorld(FMLClientHandler.java:698) [FMLClientHandler.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.func_146615_e(GuiSelectWorld.java:196) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld$List.elementClicked(GuiSelectWorld.java:276) [GuiSelectWorld$List.class:?]
-	at net.minecraft.client.gui.GuiSlot.handleMouseInput(GuiSlot.java:329) [GuiSlot.class:?]
-	at net.minecraft.client.gui.GuiSelectWorld.handleMouseInput(GuiSelectWorld.java:84) [GuiSelectWorld.class:?]
-	at net.minecraft.client.gui.GuiScreen.handleInput(GuiScreen.java:571) [GuiScreen.class:?]
-	at net.minecraft.client.Minecraft.runTick(Minecraft.java:1760) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1087) [Minecraft.class:?]
-	at net.minecraft.client.Minecraft.run(Minecraft.java:376) [Minecraft.class:?]
-	at net.minecraft.client.main.Main.main(Main.java:117) [Main.class:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_60]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_60]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_60]
-	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_60]
-	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135) [launchwrapper-1.11.jar:?]
-	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.11.jar:?]
-	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source) [start/:?]
-	at GradleStart.main(Unknown Source) [start/:?]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_60]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_60]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_60]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[?:1.8.0_60]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:90) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1432) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1430) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1429) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.8.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 21 more
-[16:36:42] [Server thread/INFO]: Player605[local:E:72a51f65] logged in with entity id 163 at (10.490779166956642, 62.0, 21.134644815841654)
-[16:36:42] [Server thread/INFO]: Player605 joined the game
-[16:36:50] [Server thread/INFO]: Saving and pausing game...
-[16:36:50] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:36:50] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:36:50] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:36:50] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/CustomLand
-[16:36:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
-[16:36:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:36:53] [Client thread/INFO]: SoundSystem shutting down...
-[16:36:53] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[16:36:53] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:36:53] [Thread-14/INFO]: Initializing LWJGL OpenAL
-[16:36:53] [Thread-14/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:36:54] [Thread-14/INFO]: OpenAL initialized.
-[16:36:54] [Sound Library Loader/INFO]: Sound engine started
-[16:36:58] [Client thread/INFO]: Created: 8192x4096 textures-atlas
-[16:37:01] [Server thread/INFO]: Saving and pausing game...
-[16:37:01] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:37:01] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:37:01] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:37:01] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/CustomLand
-[16:37:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
-[16:37:04] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:37:04] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
-[16:37:04] [Client thread/INFO]: SoundSystem shutting down...
-[16:37:04] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
-[16:37:04] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[16:37:05] [Thread-16/INFO]: Initializing LWJGL OpenAL
-[16:37:05] [Thread-16/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[16:37:05] [Thread-16/INFO]: OpenAL initialized.
-[16:37:05] [Sound Library Loader/INFO]: Sound engine started
-[16:37:09] [Client thread/INFO]: Created: 8192x4096 textures-atlas
-[16:37:16] [Server thread/INFO]: Player605 has just earned the achievement [Taking Inventory]
-[16:37:16] [Client thread/INFO]: [CHAT] Player605 has just earned the achievement [Taking Inventory]
-[16:37:35] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@550a78ed[id=98baa43b-a62e-3d66-8ee8-0933f53e227d,name=Player605,properties={},legacy=false]
-com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact authentication server
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:71) ~[YggdrasilAuthenticationService.class:?]
+[11:46:50] [Client thread/INFO]: Setting user: Player555
+[11:46:52] [Client thread/INFO]: LWJGL Version: 2.9.2
+[11:46:53] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
+[11:46:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:46:53] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:46:54] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:46:54] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[11:46:54] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:46:54] [Thread-8/INFO]: OpenAL initialized.
+[11:46:54] [Sound Library Loader/INFO]: Sound engine started
+[11:47:00] [Client thread/INFO]: Created: 8192x4096 textures-atlas
+[11:47:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
+[11:47:00] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:47:00] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:47:00] [Client thread/INFO]: SoundSystem shutting down...
+[11:47:00] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:47:00] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:47:01] [Thread-10/INFO]: Initializing LWJGL OpenAL
+[11:47:01] [Thread-10/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:47:01] [Thread-10/INFO]: OpenAL initialized.
+[11:47:01] [Sound Library Loader/INFO]: Sound engine started
+[11:47:06] [Client thread/INFO]: Created: 8192x4096 textures-atlas
+[11:47:08] [Server thread/INFO]: Starting integrated minecraft server version 1.8
+[11:47:08] [Server thread/INFO]: Generating keypair
+[11:47:08] [Server thread/INFO]: Preparing start region for level 0
+[11:47:09] [Server thread/INFO]: Changing view distance to 12, from 10
+[11:47:10] [Server thread/INFO]: Player555[local:E:d3dc7e6b] logged in with entity id 108 at (-74.59698689960422, 66.12034615817778, -150.26029638897037)
+[11:47:10] [Server thread/INFO]: Player555 joined the game
+[11:47:10] [pool-2-thread-1/WARN]: Couldn't look up profile properties for com.mojang.authlib.GameProfile@613d4fa6[id=0ee0c13d-70e5-3031-ae99-c5b7b6d44331,name=Player555,properties={},legacy=false]
+com.mojang.authlib.exceptions.AuthenticationException: The client has sent too many requests within a certain amount of time
+	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:65) ~[YggdrasilAuthenticationService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService.fillGameProfile(YggdrasilMinecraftSessionService.java:158) [YggdrasilMinecraftSessionService.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:53) [YggdrasilMinecraftSessionService$1.class:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilMinecraftSessionService$1.load(YggdrasilMinecraftSessionService.java:50) [YggdrasilMinecraftSessionService$1.class:?]
@@ -134,69 +47,33 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: Cannot contact
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_60]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_60]
 	at java.lang.Thread.run(Thread.java:745) [?:1.8.0_60]
-Caused by: java.net.UnknownHostException: sessionserver.mojang.com
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184) ~[?:1.8.0_60]
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_60]
-	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_60]
-	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668) ~[?:1.8.0_60]
-	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432) ~[?:1.8.0_60]
-	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1147) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:988) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:986) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:985) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:90) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1432) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1430) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivileged(Native Method) ~[?:1.8.0_60]
-	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782) ~[?:1.8.0_60]
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1429) ~[?:1.8.0_60]
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254) ~[?:1.8.0_60]
-	at com.mojang.authlib.HttpAuthenticationService.performGetRequest(HttpAuthenticationService.java:126) ~[HttpAuthenticationService.class:?]
-	at com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService.makeRequest(YggdrasilAuthenticationService.java:54) ~[YggdrasilAuthenticationService.class:?]
-	... 18 more
-[16:38:20] [Server thread/INFO]: Saving and pausing game...
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/CustomLand
-[16:38:20] [Server thread/INFO]: Saving and pausing game...
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:38:20] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/CustomLand
-[16:38:47] [Client thread/INFO]: [CHAT] cm:AmericanOre, cm:AmericanSword, cm:AmericanIngot
-[16:38:47] [Client thread/INFO]: [CHAT] cm:AmericanOre, cm:AmericanSword, cm:AmericanIngot
-[16:38:48] [Server thread/INFO]: [Player605: Given [§cAmer§r§ican §r§9Sword] * 1 to Player605]
-[16:38:48] [Client thread/INFO]: [CHAT] Given [§cAmer§r§ican §r§9Sword] * 1 to Player605
-[16:38:51] [Client thread/INFO]: [CHAT] Test Flag
-[16:38:51] [Client thread/INFO]: [CHAT] Test Flag
-[16:38:53] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:cm.sounds.mob.bigCat.death
-[16:40:51] [Server thread/INFO]: Player605 fell out of the world
-[16:40:51] [Client thread/INFO]: [CHAT] Player605 fell out of the world
-[16:42:02] [Server thread/INFO]: [Player605: Set the time to 0]
-[16:42:02] [Client thread/INFO]: [CHAT] Set the time to 0
-[16:43:21] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 3228ms behind, skipping 64 tick(s)
-[16:43:45] [Client thread/INFO]: [CHAT] Test Flag
-[16:43:45] [Client thread/INFO]: [CHAT] Test Flag
-[16:43:51] [Server thread/INFO]: Saving and pausing game...
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:43:51] [Server thread/INFO]: Stopping server
-[16:43:51] [Server thread/INFO]: Saving players
-[16:43:51] [Server thread/INFO]: Saving worlds
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Overworld
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/Nether
-[16:43:51] [Server thread/INFO]: Saving chunks for level 'New Worldfsd'/The End
-[16:44:00] [Client thread/INFO]: Stopping!
-[16:44:00] [Client thread/INFO]: SoundSystem shutting down...
-[16:44:00] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:47:13] [Server thread/INFO]: Saving and pausing game...
+[11:47:13] [Server thread/INFO]: Saving chunks for level 'New Worldff'/Overworld
+[11:47:13] [Server thread/INFO]: Saving chunks for level 'New Worldff'/Nether
+[11:47:13] [Server thread/INFO]: Saving chunks for level 'New Worldff'/The End
+[11:47:13] [Server thread/INFO]: Saving chunks for level 'New Worldff'/CustomLand
+[11:47:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:1.8 Mod
+[11:47:16] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:47:16] [Client thread/WARN]: ResourcePack: ignored non-lowercase namespace: .DS_Store in /Users/Ike1/.gradle/caches/minecraft/net/minecraftforge/forge/1.8-11.14.3.1450/snapshot/20141130/forgeSrc-1.8-11.14.3.1450.jar
+[11:47:16] [Client thread/INFO]: SoundSystem shutting down...
+[11:47:16] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:47:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[11:47:17] [Thread-14/INFO]: Initializing LWJGL OpenAL
+[11:47:17] [Thread-14/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[11:47:17] [Thread-14/INFO]: OpenAL initialized.
+[11:47:17] [Sound Library Loader/INFO]: Sound engine started
+[11:47:22] [Client thread/INFO]: Created: 8192x4096 textures-atlas
+[11:47:28] [Client thread/INFO]: Stopping!
+[11:47:28] [Client thread/INFO]: SoundSystem shutting down...
+[11:47:28] [Server thread/INFO]: Stopping server
+[11:47:28] [Server thread/INFO]: Saving players
+[11:47:28] [Server thread/INFO]: Saving worlds
+[11:47:28] [Server thread/INFO]: Saving chunks for level 'New Worldff'/Overworld
+[11:47:28] [Server thread/INFO]: Saving chunks for level 'New Worldff'/Nether
+[11:47:28] [Server thread/INFO]: Saving chunks for level 'New Worldff'/The End
+[11:47:28] [Server thread/INFO]: Saving chunks for level 'New Worldff'/CustomLand
+[11:47:28] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[11:47:28] [Client Shutdown Thread/INFO]: Stopping server
+[11:47:28] [Client Shutdown Thread/INFO]: Saving players
+[11:47:28] [Client Shutdown Thread/INFO]: Saving worlds
+[11:47:28] [Client Shutdown Thread/INFO]: Saving chunks for level 'New Worldff'/Overworld

@@ -135,7 +135,8 @@ public class AmericanSword extends ItemSword{
             if (flag)
             {
                 entityarrow.canBePickedUp = 2;
-                playerIn.addChatComponentMessage(new ChatComponentText("Test Flag"));
+             
+            //    playerIn.addChatComponentMessage(new ChatComponentText("AMERICA"));
             }
             else
             {

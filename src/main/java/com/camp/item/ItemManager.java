@@ -35,6 +35,12 @@ public class ItemManager {
     public static CakeItem cakeItem;
     public static GravityItem gravityItem;
     public static Eraser eraser;
+    public static DiamondMultiTool diamondMultiTool;
+    public static GoldMultiTool goldMultiTool;
+    public static IronMultiTool ironMultiTool;
+    public static StoneMultiTool stoneMultiTool;
+    public static WoodenMultiTool woodenMultiTool;
+    public static CustomMultiTool customMultiTool;
      
     public static void mainRegistry() {
         initializeItem();
@@ -42,6 +48,12 @@ public class ItemManager {
     }
  
     public static void initializeItem() {
+    	diamondMultiTool=new DiamondMultiTool(ToolMaterial.EMERALD);
+    	goldMultiTool=new GoldMultiTool(ToolMaterial.GOLD);
+    	ironMultiTool=new IronMultiTool(ToolMaterial.IRON);
+    	stoneMultiTool=new StoneMultiTool(ToolMaterial.STONE);
+    	woodenMultiTool=new WoodenMultiTool(ToolMaterial.WOOD);
+    	customMultiTool=new CustomMultiTool(cm.customToolMaterial);
     	eraser = new Eraser();
     	gravityItem=new GravityItem();
     	cakeItem = new CakeItem();
@@ -49,11 +61,11 @@ public class ItemManager {
     	americanIngot = new AmericanIngot();
     	trainboyItem = new TrainboyItem();
         customItem = new CustomItem();
-        customPickaxe = new CustomPickaxe(ToolMaterial.EMERALD);
-        customAxe = new CustomAxe(ToolMaterial.EMERALD);
-        customHoe = new CustomHoe(ToolMaterial.EMERALD);
-        customShovel = new CustomShovel(ToolMaterial.EMERALD);
-        customSword = new CustomSword(ToolMaterial.EMERALD);
+        customPickaxe = new CustomPickaxe(cm.customToolMaterial);
+        customAxe = new CustomAxe(cm.customToolMaterial);
+        customHoe = new CustomHoe(cm.customToolMaterial);
+        customShovel = new CustomShovel(cm.customToolMaterial);
+        customSword = new CustomSword(cm.customToolMaterial);
         americanSword = new AmericanSword(cm.americanToolMaterial);
         lightningOrb= new LightningOrb();
         customHelmet = new CustomArmor(ArmorMaterial.IRON, 0, 0, "CustomHelmet");
@@ -70,6 +82,12 @@ public class ItemManager {
     
  
     public static void registerItem() {
+    	GameRegistry.registerItem(diamondMultiTool, diamondMultiTool.name);
+    	GameRegistry.registerItem(goldMultiTool, goldMultiTool.name);
+    	GameRegistry.registerItem(ironMultiTool, ironMultiTool.name);
+    	GameRegistry.registerItem(stoneMultiTool, stoneMultiTool.name);
+    	GameRegistry.registerItem(woodenMultiTool, woodenMultiTool.name);
+    	GameRegistry.registerItem(customMultiTool, customMultiTool.name);
     	GameRegistry.registerItem(eraser, eraser.name);
     //	GameRegistry.registerItem(gravityItem, gravityItem.name);
     	GameRegistry.registerItem(cakeItem, cakeItem.name);

@@ -1,5 +1,5 @@
 {
-	"parent": "cm:block/ColoredWood",
+	"parent": "cm:block/ColoredWood15",
 	"display": {
 		"thirdperson": {
 			"rotation": [ 10, -45, 170 ],

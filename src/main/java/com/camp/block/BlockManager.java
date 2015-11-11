@@ -3,11 +3,15 @@ package com.camp.block;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.camp.tileentity.TileEntityEndBlock;
+import com.example.examplemod.cm;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockCommandBlock;
 import net.minecraft.block.BlockDragonEgg;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.common.registry.GameRegistry;
  
  
@@ -78,10 +82,12 @@ public class BlockManager {
     public static BlockProperties propertyBlock;
     public static BitBlock bitBlock;
     public static ColoredWood coloredWood;
+    public static EndBlock endBlock;
      
     public static void mainRegistry() {
         initializeBlock();
         registerBlock();
+        
     }
  
     public static void initializeBlock() {
@@ -103,6 +109,7 @@ public class BlockManager {
     	coloredWoodBlue = new ColoredWood().getStateFromMeta(11);
     	coloredWoodBlack = new ColoredWood().getStateFromMeta(15);*/
     //	propertyBlock= new BlockProperties("property_block", Material.rock, 50, 50);
+    	endBlock = new EndBlock(Material.portal);
     	customCake = new CustomCake();
     	oreBlock = new OreBlock();
     	testBlock = new TestBlock();
@@ -177,6 +184,7 @@ public class BlockManager {
     	GameRegistry.registerBlock(peach, peach.name+"16");
     	GameRegistry.registerBlock(toad, toad.name+"17");
     	GameRegistry.registerBlock(bowser, bowser.name+"18");*/
+    	GameRegistry.registerBlock(endBlock, endBlock.name);
     	GameRegistry.registerBlock(customCake, customCake.name);
     	GameRegistry.registerBlock(coloredWood, coloredWood.name);
     	GameRegistry.registerBlock(oreBlock, oreBlock.name);
@@ -207,9 +215,15 @@ public class BlockManager {
         
        // GameRegistry.registerBlock(propertyBlock = new BlockProperties("block_properties", Material.rock, 50, 50), ItemBlockMeta.class, "block_properties");
 
-
-
-        
     }
+    
+    public static void registerTileEntities() {
+		registerTileEntity(TileEntityEndBlock.class, "endBlock");
+	//	registerTileEntity(TileEntityFluidTank.class, "fluidTank");
+	}
+
+	private static void registerTileEntity(Class<? extends TileEntity> tileEntityClass, String id) {
+		GameRegistry.registerTileEntity(tileEntityClass, cm.MODID + ":" + id);
+	}
  
 }
